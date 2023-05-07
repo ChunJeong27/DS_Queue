@@ -10,9 +10,7 @@ class Queue
 public:
     Queue();
 
-    void init();
-    void isEmpty();
-
+    bool isEmpty() const;
     void enqueue(Data data);
     Data dequeue();
     Data peek();
@@ -23,6 +21,8 @@ private:
     int front;
     int rear;
     Data queArr[QUE_LEN];
+
+    int nextPosIdx(int const pos) const;
 
 };
 
