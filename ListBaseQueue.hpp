@@ -3,19 +3,18 @@
 
 using Data = int;
 
-class Node
+typedef struct _node
 {
-public:
     Data data;
-    Node* next;
-};
+    struct _node* next;
+} Node;
 
 class Queue
 {
 public:
     Queue();
 
-    int isEmpty();
+    bool isEmpty();
     void enqueue(Data data);
     Data dequeue();
     Data peek();
