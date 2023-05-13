@@ -1,7 +1,7 @@
 #ifndef __LIST_BASE_QUEUE_HPP__
 #define __LIST_BASE_QUEUE_HPP__
 
-using Data = int;
+using Data = double;
 
 typedef struct _node
 {
