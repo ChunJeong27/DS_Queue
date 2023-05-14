@@ -7,6 +7,7 @@
 
 class SB_Output
 {
+public:
     void print()
     {
         std::cout << "Version 1.0" << std::endl;
